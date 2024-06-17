@@ -58,10 +58,10 @@
 // }
 // ### პროექტი 65 - Who’s in Space? - ვინ არის კოსმოსში?
 
-// იცოდით, რომ ზუსტად შეგიძლიათ გაიგოთ, ვინ არის ახლა კოსმოსში? ამის შესახებ
-// ინფორმაციას Open Notify API გვაწვდის. ეწვიეთ ბმულს:
-// http://api.open-notify.org/astros.json, რომ ნახოთ არა მხოლოდ რამდენი 
-//ადამიანი იმყოფება ამჟამად კოსმოსში, არამედ - მათი სახელები და ის, თუ რომელ კოსმოსურ ხომალდზე იმყოფებიან.
+    // იცოდით, რომ ზუსტად შეგიძლიათ გაიგოთ, ვინ არის ახლა კოსმოსში? ამის შესახებ
+    // ინფორმაციას Open Notify API გვაწვდის. ეწვიეთ ბმულს:
+    // http://api.open-notify.org/astros.json, რომ ნახოთ არა მხოლოდ რამდენი 
+    //ადამიანი იმყოფება ამჟამად კოსმოსში, არამედ - მათი სახელები და ის, თუ რომელ კოსმოსურ ხომალდზე იმყოფებიან.
 
 // შექმენით პროგრამა, რომელიც ამოიღებს ამ მონაცემებს და აჩვენებს ინფორმაციას ამ API-დან ცხრილის ფორმატში.
 
@@ -86,18 +86,29 @@
 // > Where are you? Chicago IL
 // > Chicago weather:
 // > 65 degrees Fahrenheit
-// ### პროექტი 67 - Grabbing the Weather - ამინდის გაგება
+// const city = prompt('Enter the city name');
 
-// ნეტავ, დღეს კარგი ამინდი იქნება? თუ ქურთუკი უნდა ვიქონიი? OpenWeatherMap API-ის გამოყენებით,
-// ბმულით: http://openweathermap.org/ , შექმენით პროგრამა, რომელიც მოგთხოვთ ქალაქის სახელს და დააბრუნებს
-// ქალაქის მიმდინარე ტემპერატურას.
+// async function temperature() {
+//     const apiKey = 'c1951e90407ebbc8a63d7fd603621203';
+//     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
+    
+//     try {
+//         const response = await fetch(apiUrl);
+//         if (!response.ok) {
+//             throw new Error('City not found');
+//         }
 
-// მაგალითად:
-// ```shell
-// > Where are you? Chicago IL
-// > Chicago weather:
-// > 65 degrees Fahrenheit
-// ```
+//         const data = await response.json();
+//         const temperature = data.main.temp;
+
+//         console.log(`The current temperature in ${city} is ${temperature}°C.`);
+//     } catch (error) {
+//         console.error('Error fetching weather data:', error.message);
+//     }
+// }
+
+// temperature();
+
 
 // ### პროექტი 68 - Flickr Photo Search - ფოტოს ძებნა Flickr-ზე
 
