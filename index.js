@@ -72,8 +72,23 @@
 // | Gennady Padalka | ISS |
 // | Mikhail Kornienko | ISS |
 // | Scott Kelly |  ISS |  
+async function showPeople() {
+    try {
+        const response = await fetch('http://api.open-notify.org/astros.json');
+        
+        if (!response.ok) {
+            throw new Error('Failed to fetch data');
+        }
+        
+        const data = await response.json();
+        console.table(data.people);
+    } catch (error) {
+        console.error('Error fetching astronaut data:', error.message);
+    }
+}
 
-// ```
+showPeople();
+
 
 // ### პროექტი 66 - Grabbing the Weather - ამინდის გაგება
 
