@@ -72,24 +72,31 @@
 // | Gennady Padalka | ISS |
 // | Mikhail Kornienko | ISS |
 // | Scott Kelly |  ISS |  
-async function showPeople() {
-    try {
-        const response = await fetch('http://api.open-notify.org/astros.json');
-        
-        if (!response.ok) {
-            throw new Error('Failed to fetch data');
-        }
-        
-        const data = await response.json();
-        console.table(data.people);
-    } catch (error) {
-        console.error('Error fetching astronaut data:', error.message);
-    }
-}
 
-showPeople();
+// async function showPeople(){
+//         try{
+//             const response = await fetch('http://api.open-notify.org/astros.json')
+//             if(!response.ok){
+//                 throw new Error('failed')
+//             }
+//             const data = await response.json()
+//             console.table(data.people)
 
+//         }catch(error){
+//             console.log(`Error fetch data`, error.message)
+//         }
 
+// }
+// showPeople()
+
+// esec sheileboda qvemot rogorcaa mara tavi davizgvie responsisdros rame secdomaro ar kopiliko)))
+
+// async function showpeople(){
+//     const response = await fetch('http://api.open-notify.org/astros.json')
+//     const data = await response.json()
+//     console.table(data.showpeople)
+//     }
+//     showpeople()
 // ### პროექტი 66 - Grabbing the Weather - ამინდის გაგება
 
 // დღეს კარგი ამინდი იქნება? თუ ქურთუკი უნდა ვიქონიი? OpenWeatherMap API-ის გამოყენებით,
