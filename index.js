@@ -36,7 +36,26 @@
 // დამატებითი გამოწვევა:
 // * ჰკითხეთ მომხმარებელს, როგორ დალაგდეს ჩანაწერები. დაუშვით დახარისხება თარიღის, 
 // პოზიციის ან გვარის მიხედვით.
+// const arrNames = [
+//     {name:'sergi',lastName:'qaliashvili',position: 'frontendDev'},
+//     {name:'gio',lastName:'amashukeli',position: 'footballer'},
+//     {name:'nika',lastName:'shengelia',position: 'agronomy'},
+//     {name:'dato',lastName:'meparishvili',position: 'singer'},
+// ]
+// const search = prompt('search what U want').toLowerCase()
 
+// const results = arrNames.filter(record =>
+//     record.name.toLowerCase().includes(search) || 
+//     record.lastName.toLowerCase().includes(search)
+// );
+
+// if (results.length > 0) {
+//     results.forEach(record => {
+//         console.log(`Name: ${record.name} ${record.lastName}, Position: ${record.position}`);
+//     });
+// } else {
+//     console.log('No records found.');
+// }
 // ### პროექტი 65 - Who’s in Space? - ვინ არის კოსმოსში?
 
 // იცოდით, რომ ზუსტად შეგიძლიათ გაიგოთ, ვინ არის ახლა კოსმოსში? ამის შესახებ
