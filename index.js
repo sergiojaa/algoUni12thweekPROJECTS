@@ -134,13 +134,26 @@
 
 // ### პროექტი 68 - Flickr Photo Search - ფოტოს ძებნა Flickr-ზე
 
-// ზოგიერთი სერვისი ძიების ფუნქციებს უზრუნველჰყოფს და გაძლევთ კონტროლი საშუალებას 
-//თქვენ მიერ მიღებულ შედეგებზე. თქვენ მხოლოდ სწორი მოთხოვნის (request) ჩამოყალიბება გჭირდებათ.
-// შექმენით პროგრამა გრაფიკული ინტერფეისით, რომელიც იღებს საძიებო სტრიქონს (string) და აჩვენებს ფოტოებს, 
-//რომლებიც შეესაბამება ამ ძიებას. სერვისად გამოიყენეთ Flickr-ის საჯარო ფოტოების ბმული:
-// https://www.flickr.com/services/feeds/docs/photos_public/ 
-
+// ზოგიერთი სერვისი ძიების ფუნქციებს უზრუნველჰყოფს და კონტროლის საშუალებას 
+//თქვენ მიერ მიღებულზე. თქვენ მხოლოდ სწორი მოთხოვნის (მოთხოვნის) ჩამოყალიბება ფორმანის.
+//შექმენით პროგრამა გრაფიკული ინტერფეისით, რომელიც იღებს საძიებო სტრიქონს (სტრიქონს) და კომბინაცია ფოტოებს, 
+//რომლებიც ამ ძიებას. სერვისად სერვისად Flickr-ის საჯარო სურათის ბმული:
+// https://www.flickr.com/services/feeds/docs/photos_public/
+// async function searchService(){
+//     try{
+//         const response = await fetch('https://www.flickr.com/services/feeds/docs/photos_public/')
+//         if(!response.ok){
+//             throw new Error('failed fo fetch data')
+//         }
+//         const data = await response.json()
+//         console.log(data)
+//     }catch(error){
+//         console.error('error fetching data', error.message)
+//     }
+// }
 // ### პროექტი 69 - Movie Recommendations - ფილმის რეკომენდაციები
+
+
 
 // დაწერეთ პროგრამა, რომელიც აჩვენებს ინფორმაციას მოცემული ფილმის შესახებ. გამოიყენეთ 
 //Rotten Tomatoes-ს API მისამართზე: http://developer.rottentomatoes.com/ და მიიღეთ API key. მოითხოვეთ
@@ -158,4 +171,4 @@
 // > Running Time: 121 minutes
 // > Description: From Marvel...
 // > You should watch this movie right now!
-// ```
+
