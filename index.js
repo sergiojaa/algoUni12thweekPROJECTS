@@ -151,9 +151,8 @@
 //         console.error('error fetching data', error.message)
 //     }
 // }
+// searchService()
 // ### პროექტი 69 - Movie Recommendations - ფილმის რეკომენდაციები
-
-
 
 // დაწერეთ პროგრამა, რომელიც აჩვენებს ინფორმაციას მოცემული ფილმის შესახებ. გამოიყენეთ 
 //Rotten Tomatoes-ს API მისამართზე: http://developer.rottentomatoes.com/ და მიიღეთ API key. მოითხოვეთ
@@ -171,4 +170,5 @@
 // > Running Time: 121 minutes
 // > Description: From Marvel...
 // > You should watch this movie right now!
+
 
